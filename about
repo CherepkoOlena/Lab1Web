@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ваше Прізвище та Ім'я">
+    <title>Аптека "Здоров'я"</title>
+</head>
+<body>
+    <header>
+        <h1>Аптека "Здоров'я"</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Про автора</a></li>
+                <li><a href="about.html">Інформація про фірму (Аптека)</a></li>
+                <li><a href="news.html">Новини компанії</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Каталог медикаментів</h2>
+        <p>Наша аптека пропонує широкий асортимент сертифікованих лікарських засобів.</p>
+        
+        <table border="1">
+            <tr>
+                <th>Вид</th>
+                <th>Марка</th>
+                <th>Виробник</th>
+                <th>Термін придатності</th>
+                <th>Постачальник</th>
+                <th>Ціна (грн)</th>
+            </tr>
+            <tr>
+                <td>Знеболююче</td>
+                <td>Нурофєн</td>
+                <td>Reckitt Benckiser</td>
+                <td>12.2028</td>
+                <td>ФармПостач ТОВ</td>
+                <td>120.50</td>
+            </tr>
+            <tr>
+                <td>Вітаміни</td>
+                <td>Супрадін</td>
+                <td>Bayer</td>
+                <td>05.2027</td>
+                <td>МедОпт</td>
+                <td>350.00</td>
+            </tr>
+        </table>
+    </main>
+    <footer>
+        <p>Розроблено: Ваше Прізвище та Ім'я, 2026</p>
+    </footer>
+</body>
+</html>
