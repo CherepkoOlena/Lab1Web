@@ -2,7 +2,7 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Черепко Олена Олександрівна">
+    <meta name="author" content="Ваше Прізвище та Ім'я">
     <title>Про підприємство</title>
 </head>
 <body>
@@ -12,9 +12,43 @@
         <a href="news.html">Новини</a>
     </nav>
     <hr>
-    <h1>Пекарня "Солодкий дім"</h1>
-    <p>Наша компанія займається виробництвом свіжих та якісних хлібо-булочних виробів. Ми використовуємо лише натуральні інгредієнти та традиційні рецепти випікання.</p>
-    
+    <h1>Пекарня "Рум'яний Коровай"</h1>
+
+    <!-- Використання тегу <blockquote> з атрибутами style, dir, id[cite: 2] -->
+    <blockquote style="background-color: #f4f4f4; padding: 10px;" dir="ltr" id="quote-block">
+        Наша мета — випікати найсмачніший хліб за традиційними рецептами.
+    </blockquote>
+
+    <p>
+        Щоб переглянути детальний прайс, натисніть клавішу 
+        <!-- Використання тегу <kbd> з атрибутами title, id[cite: 2] -->
+        <kbd title="Клавіша на клавіатурі" id="key-enter">Enter</kbd>.
+    </p>
+
+    <p>
+        Ми суворо дотримуємося вимог 
+        <!-- Використання тегу <abbr> з атрибутами dir, style[cite: 2] -->
+        <abbr dir="ltr" style="font-weight: bold;" title="Державний стандарт України">ДСТУ</abbr>.
+        <!-- Використання тегу <strong> з атрибутами lang, class[cite: 2] -->
+        <strong lang="uk" class="highlight-text">Усі інгредієнти 100% натуральні!</strong>
+    </p>
+
+    <!-- Використання тегу <address> з атрибутами id, title[cite: 2] -->
+    <address id="company-address" title="Наші контакти">
+        <!-- Використання тегу <em> з атрибутами class, lang[cite: 2] -->
+        <em class="address-text" lang="uk">Ми знаходимось у місті Чернівці.</em>
+    </address>
+
+    <!-- Використання тегу <pre> з атрибутами class, lang[cite: 2] -->
+    <pre class="schedule-block" lang="uk">
+Графік роботи:
+Понеділок - П'ятниця: 08:00 - 20:00
+Субота - Неділя: 09:00 - 18:00
+    </pre>
+
+    <!-- Використання тегу <img> з атрибутами usemap, style, title, lang, dir[cite: 2] -->
+    <img src="bakery.jpg" usemap="#bakery-map" style="width: 250px; border: 1px solid black;" title="Фото пекарні" lang="uk" dir="ltr" alt="Пекарня">
+
     <h2>Асортимент та характеристики продукції</h2>
     <table border="1" cellpadding="5" cellspacing="0">
         <tr>
@@ -28,18 +62,10 @@
         <tr>
             <td>Хліб пшеничний</td>
             <td>Вищий</td>
-            <td>Борошно пшеничне, вода, дріжджі, сіль</td>
+            <td>Борошно пшеничне, вода, сіль</td>
             <td>ТОВ "Подільський Млин"</td>
             <td>48 годин</td>
             <td>28.50 грн</td>
-        </tr>
-        <tr>
-            <td>Булочка з маком</td>
-            <td>Перший</td>
-            <td>Борошно, цукор, мак, вершкове масло</td>
-            <td>ФГ "Солодка Нива"</td>
-            <td>72 години</td>
-            <td>18.00 грн</td>
         </tr>
     </table>
 </body>

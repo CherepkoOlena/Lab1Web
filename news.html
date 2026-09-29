@@ -2,8 +2,13 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Черепко Олена Олександрівна">
+    <meta name="author" content="Ваше Прізвище та Ім'я">
     <title>Новини компанії</title>
+    <!-- Використання тегу <style> з атрибутом media[cite: 3] -->
+    <style media="screen">
+        .news-container { margin-top: 20px; }
+        .promo { color: red; }
+    </style>
 </head>
 <body>
     <nav>
@@ -12,18 +17,57 @@
         <a href="news.html">Новини</a>
     </nav>
     <hr>
-    <h1>Останні новини пекарні</h1>
-    
-    <article>
-        <h3>Запуск нової лінії бездріжджового хліба</h3>
-        <p><strong>Дата:</strong> 20 Вересня 2026</p>
-        <p>Раді повідомити, що з наступного місяця ми розпочинаємо випікання корисного бездріжджового хліба на хмельовій заквасці. Це ідеальний вибір для прихильників здорового харчування.</p>
-    </article>
-    
-    <article>
-        <h3>Співпраця з місцевими кав'ярнями</h3>
-        <p><strong>Дата:</strong> 15 Вересня 2026</p>
-        <p>Наша пекарня підписала договір про щоденне постачання свіжих круасанів до п'яти нових кав'ярень у центрі міста. Шукайте нашу випічку поруч зі своїм домом!</p>
-    </article>
+
+    <!-- Використання тегу <div> з атрибутами id, class[cite: 3] -->
+    <div id="main-content" class="news-container">
+        
+        <!-- Використання тегу <section> з атрибутами class, style[cite: 3] -->
+        <section class="news-section" style="padding: 15px; border: 1px dashed gray;">
+            
+            <!-- Використання тегу <article> з атрибутами id, class[cite: 3] -->
+            <article id="news-item-1" class="latest-news">
+                <h2>Осінні знижки на випічку!</h2>
+                <p>
+                    <!-- Використання тегу <span> з атрибутами id, title[cite: 3] -->
+                    <span id="date-span" title="Дата публікації">Сьогодні ми оновили ціни на круасани.</span>
+                    Стара ціна: 
+                    <!-- Використання тегу <del> з атрибутами class, lang[cite: 3] -->
+                    <del class="old-price" lang="uk">45 грн</del>.
+                    Нова пропозиція діятиме 
+                    <!-- Використання тегу <mark> з атрибутом datetime (як у вашому завданні)[cite: 3] -->
+                    <mark datetime="2026-10-01">до кінця місяця</mark>!
+                </p>
+                <p>
+                    Наша формула якості: найкраща вода (H<!-- Використання тегу <sub> з атрибутами style, lang[cite: 3] --><sub style="font-size: smaller;" lang="uk">2</sub>O) + якість<!-- Використання тегу <sup> з атрибутами lang, style, class[cite: 3] --><sup lang="uk" style="color: blue;" class="super-text">100%</sup>.
+                </p>
+                <p>
+                    <!-- Використання тегу <bdo> з атрибутом dir[cite: 3] -->
+                    <bdo dir="rtl">Якісний хліб</bdo> (текст справа наліво для привернення уваги).
+                </p>
+                <p>
+                    <!-- Використання тегів <ruby> та <rp> з їхніми атрибутами[cite: 3] -->
+                    <ruby id="ruby-word">
+                        Хліб <rp style="color: gray;" title="дужка">(</rp><rt>Bread</rt><rp style="color: gray;" title="дужка">)</rp>
+                    </ruby>
+                </p>
+            </article>
+        </section>
+
+        <!-- Використання тегу <aside> з атрибутом id[cite: 3] -->
+        <aside id="sidebar-ads">
+            <p><em>Тут може бути ваша реклама пекарні.</em></p>
+        </aside>
+
+        <h3>Карта проїзду до наших нових точок</h3>
+        <!-- Використання тегу <img> з атрибутами class, alt, ismap, height, src[cite: 3] -->
+        <img class="interactive-map" alt="Карта точок продажу" ismap height="300" src="map.jpg">
+
+        <!-- Використання тегу <map> з атрибутами onblur, lang, coords[cite: 3] -->
+        <map name="points" onblur="console.log('втрачено фокус')" lang="uk" coords="0,0,200,200">
+            <!-- Використання тегу <area> з атрибутами style, id, coords, class, lang[cite: 3] -->
+            <area style="cursor: pointer;" id="point-1" coords="0,0,50,50" class="map-link" lang="uk" shape="rect" href="about.html" alt="Точка 1">
+        </map>
+
+    </div>
 </body>
 </html>
